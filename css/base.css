@@ -1,28 +1,23 @@
 body{
-    background-color: rgba(255, 0, 0,0.75);
+    /* background-color: rgba(255, 0, 0,0.75); */
     margin:0;
     padding:0;
 }
 
-.flex-container {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  row {
-    width: 100%;
-  }
-  .flex-item {
-    background: tomato;
-    padding: 0px;
-    width: 200px;
-    height: 150px;
-    margin: 0px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-  }
+#container {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 300px;
+}
+
+.box {
+    min-height: 10vw;
+    width: 300px;
+    margin: 5px;
+    text-align: center;     /* will center text in <p>, which is not a flex item */
+}
+
+#bluebox { background: aqua; }
+#redbox { background: red; }

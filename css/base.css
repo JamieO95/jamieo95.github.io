@@ -1,23 +1,82 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
 body{
-    /* background-color: rgba(255, 0, 0,0.75); */
+    background-color: #272838;
     margin:0;
     padding:0;
+    
 }
 
-#container {
+#flexbox-container {
+    background-color: black;
     display: flex;           /* establish flex container */
-    flex-direction: column;  /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
+    flex-direction: row;  /* make main axis vertical */
+    justify-content: space-evenly; /* center items vertically, in this case */
     align-items: center;     /* center items horizontally, in this case */
-    height: 300px;
 }
 
-.box {
+.flexbox-item {
     min-height: 10vw;
-    width: 300px;
+    width:20%;
     margin: 5px;
     text-align: center;     /* will center text in <p>, which is not a flex item */
 }
 
 #bluebox { background: aqua; }
 #redbox { background: red; }
+
+.sidebar{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color: #00ffff;
+    overflow-x: hidden;
+    padding-top:60px;
+    transition:0.5s;
+}
+
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size:25px;
+    color:#272838;
+    display:block;
+    transition:0.3s;
+}
+
+.sidebar a:hover {
+    color:#9C9583;
+}
+
+.sidebar .btnClose {
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left: 50px;
+}
+
+.btnOpen {
+    font-size:20px;
+    cursor:pointer;
+    background-color: #00FFFF;
+    color:white;
+    padding: 10px 15px;
+    border:none;
+    border-bottom-right-radius:10%;
+}
+
+.btnOpen:hover {
+    background-color: #444;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

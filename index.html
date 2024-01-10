@@ -7,25 +7,48 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Test</title>
+        <title>Jamie Oliver</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/base.css">
+        <script src="js/test.js"></script>
+        
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <h1>Test1</h1>
+        <div id = "navSidebar" class="sidebar">
+            <a href="javascript:void(0)" class="btnClose" onClick = "closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
 
-        <div id="container"><!-- flex container -->
+        <div id="main">
+            <button class="btnOpen" onclick="openNav()">&#9776;</button>
+            <h2>Collapsed Sidebar</h2>
+            <p>Content...</p>
+        </div>
 
-            <div class="box" id="bluebox"><!-- flex item -->
+        <h1>Jamie Oliver</h1>
+
+        <div id="flexbox-container"><!-- flex container -->
+
+            <div class="flexbox-item" id="bluebox"><!-- flex item -->
                 Div
             </div>
         
-            <div class="box" id="redbox"><!-- flex item -->
+            <div class="flexbox-item" id="redbox"><!-- flex item -->
+                <p>DIV #2</p>
+            </div>
+
+            <div class="flexbox-item" id="redbox"><!-- flex item -->
+                <p>DIV #2</p>
+            </div>
+
+            <div class="flexbox-item" id="redbox"><!-- flex item -->
                 <p>DIV #2</p>
             </div>
         

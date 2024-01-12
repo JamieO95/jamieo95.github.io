@@ -35,7 +35,7 @@ body{
     top:0;
     left:0;
     background-color: #41337A;
-    overflow-x: hidden;
+    overflow: hidden;
     padding-top:60px;
     transition:0.3s;
 }
@@ -72,12 +72,12 @@ body{
 }
 
 .sidebar .sidebar-title {
-    width:50%;
+    width:100%;
     display:block;
     margin:auto;
     text-align: center;
+    font-size: 20px;
     color: #6EA4BF;
-    margin-bottom:1em;
     font-weight:bolder;
     text-wrap:nowrap;
 }
@@ -109,8 +109,18 @@ body{
     left:0;
     bottom:0;
     display:flex;
-    justify-content: space-evenly;
+    justify-content:center;
     position:sticky;
-    overflow-y: hidden;
+    overflow: hidden;
     width:100%;
+}
+
+#navFooter i{
+    margin-right:10px;
+    margin-bottom:1em;
+    transition:0.3s;
+}
+
+#navFooter i:hover{
+    color:#C2EFEB;
 }

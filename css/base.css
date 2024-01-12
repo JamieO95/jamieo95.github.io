@@ -1,9 +1,9 @@
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
-    background-color: #272838;
+    background-color: #331E36;
     margin:0;
     padding:0;
     
@@ -34,23 +34,23 @@ body{
     z-index:1;
     top:0;
     left:0;
-    background-color: #00ffff;
+    background-color: #41337A;
     overflow-x: hidden;
     padding-top:60px;
-    transition:0.5s;
+    transition:0.3s;
 }
 
 .sidebar a{
-    padding: 8px 8px 8px 32px;
+    padding: 5px 5px 5px 15px;
     text-decoration: none;
     font-size:25px;
-    color:#272838;
+    color:#6EA4BF;
     display:block;
     transition:0.3s;
 }
 
 .sidebar a:hover {
-    color:#9C9583;
+    color:#C2EFEB;
 }
 
 .sidebar .btnClose {
@@ -61,10 +61,31 @@ body{
     margin-left: 50px;
 }
 
+.sidebar .sidebar-selfie {
+    width:50%;
+    display:block;
+    margin:auto;
+    border:2px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #6EA4BF;
+}
+
+.sidebar .sidebar-title {
+    width:50%;
+    display:block;
+    margin:auto;
+    text-align: center;
+    color: #6EA4BF;
+    margin-bottom:1em;
+    font-weight:bolder;
+    text-wrap:nowrap;
+}
+
 .btnOpen {
     font-size:20px;
     cursor:pointer;
-    background-color: #00FFFF;
+    background-color: #41337A;
     color:white;
     padding: 10px 15px;
     border:none;
@@ -77,6 +98,19 @@ body{
 }
 
 @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
+    .sidebar {padding-top: 2px;}
+    .sidebar a {font-size: 20px;}
+    .sidebar .sidebar-selfie {width:25%; margin-top: 20px;}
   }
+
+#navFooter {
+    color:#6EA4BF;
+    font-size:2em;    
+    left:0;
+    bottom:0;
+    display:flex;
+    justify-content: space-evenly;
+    position:sticky;
+    overflow-y: hidden;
+    width:100%;
+}

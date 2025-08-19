@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/css/base.css' | relative_url }}">
+
+</head>
+    <body>
+        {% include navbar.html %}
+        <main>
+            {{ content }}
+        </main>
+        <script src="{{ '/js/main.js' | relative_url }}"></script>
+    </body>
+</html>

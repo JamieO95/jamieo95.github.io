@@ -30,7 +30,6 @@ body{
 .sidebar{
     height:100%;
     width:0;
-    min-width:0;
     position:fixed;
     z-index:1;
     top:0;
@@ -39,11 +38,6 @@ body{
     overflow: hidden;
     padding-top:60px;
     transition:0.3s;
-}
-
-.sidebar.open{
-    width:15%;
-    min-width:250px;
 }
 
 .sidebar a{

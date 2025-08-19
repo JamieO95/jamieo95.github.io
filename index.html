@@ -1,69 +1,35 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Jamie Oliver</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/base.css">
-        <script src="js/test.js"></script>
-        <script src="https://kit.fontawesome.com/03214fb603.js" crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+---
+layout: default
+title: JamieO.XYZ
+---
 
-        <div id = "navSidebar" class="sidebar">
-            <img src="img/selfie.jpg" class="sidebar-selfie">
-            <p class="sidebar-title">Jamie Oliver</p>
-            <div id="navFooter">
-                <a href="https://twitter.com/JamieOTV" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.youtube.com/jamieotv" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.twitch.tv/JamieO" target="_blank"><i class="fa-brands fa-twitch"></i></a>
-            </div>
-            <a href="javascript:void(0)" class="btnClose" onClick = "closeNav()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+<div id="main">
+    <button id="btnOpen" class="btnOpen">&#9776;</button>
+    <h2>Collapsed Sidebar</h2>
+    <p>Content...</p>
+</div>
 
-            
+    <h1>Jamie Oliver</h1>
+
+    <div id="flexbox-container"><!-- flex container -->
+
+        <div class="flexbox-item" id="bluebox"><!-- flex item -->
+            Div
+        </div>
+    
+        <div class="flexbox-item" id="redbox"><!-- flex item -->
+            <p>DIV #2</p>
         </div>
 
-        <div id="main">
-            <button class="btnOpen" onclick="openNav()">&#9776;</button>
-            <h2>Collapsed Sidebar</h2>
-            <p>Content...</p>
+        <div class="flexbox-item" id="redbox"><!-- flex item -->
+            <p>DIV #2</p>
         </div>
 
-        <h1>Jamie Oliver</h1>
-
-        <div id="flexbox-container"><!-- flex container -->
-
-            <div class="flexbox-item" id="bluebox"><!-- flex item -->
-                Div
-            </div>
-        
-            <div class="flexbox-item" id="redbox"><!-- flex item -->
-                <p>DIV #2</p>
-            </div>
-
-            <div class="flexbox-item" id="redbox"><!-- flex item -->
-                <p>DIV #2</p>
-            </div>
-
-            <div class="flexbox-item" id="redbox"><!-- flex item -->
-                <p>DIV #2</p>
-            </div>
-        
+        <div class="flexbox-item" id="redbox"><!-- flex item -->
+            <p>DIV #2</p>
         </div>
+    
+    </div>
         
-        <script src="" async defer></script>
     </body>
 </html>

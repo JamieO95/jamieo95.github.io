@@ -1,13 +1,19 @@
-<div id = "navSidebar" class="sidebar">
-    <img src="img/selfie.jpg" class="sidebar-selfie">
+<button id="btnOpen" class="btnOpen">&#9776;</button>
+<div id = "navSidebar" class="sidebar open">
+    <img src="/img/selfie.jpg" class="sidebar-selfie">
     <p class="sidebar-title">Jamie Oliver</p>
-    <div id="navFooter">
+    <div id="navSocials">        
         <a href="https://twitter.com/JamieOTV" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://www.youtube.com/jamieotv" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         <a href="https://www.twitch.tv/JamieO" target="_blank"><i class="fa-brands fa-twitch"></i></a>
     </div>
+
+    <p class="sidebar-title">------------</p>
+    <p class="sidebar-subtitle">Just a lowly school IT admin sharing his thoughts</p>
+    <p class="sidebar-title">------------</p>
+    
     <a href="javascript:void(0)" id="btnClose" class="btnClose">&times;</a>
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>            
+    {% for link in site.navbar_links %}
+            <a href="{{ link.url }}" class="{% if page.url == link.url %}active{% endif %}">{{ link.title }}</a>
+    {% endfor %}
 </div>

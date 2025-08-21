@@ -5,8 +5,7 @@ html {
 body{
     background-color: #331E36;
     margin:0;
-    padding:0;
-    
+    padding:0;    
 }
 
 #flexbox-container {
@@ -30,7 +29,7 @@ body{
 .sidebar{
     height:100%;
     width:0;
-    min-width:0;
+    min-width: 0;
     position:fixed;
     z-index:1;
     top:0;
@@ -38,12 +37,22 @@ body{
     background-color: #41337A;
     overflow: hidden;
     padding-top:60px;
-    transition:0.3s;
+    transition:0.3s ease;
 }
 
 .sidebar.open{
     width:15%;
     min-width:250px;
+    transition:0.3s;
+}
+
+.sidebar.open ~ #main {
+    margin-left: Max(250px,15%);
+    
+}
+
+.sidebar:not(.open) ~ #main {
+    margin-left: 0;
 }
 
 .sidebar a{
@@ -57,6 +66,11 @@ body{
 
 .sidebar a:hover {
     color:#C2EFEB;
+}
+
+.sidebar a.active {
+    color:#C2EFEB;
+    font-weight:bold;
 }
 
 .sidebar .btnClose {
@@ -88,6 +102,17 @@ body{
     text-wrap:nowrap;
 }
 
+.sidebar .sidebar-subtitle {
+    width:80%;
+    display:block;
+    margin:auto;
+    text-align: center;
+    font-size: 14px;
+    color: #6EA4BF;
+    font-weight:bolder;
+    text-wrap:wrap;
+}
+
 .btnOpen {
     font-size:20px;
     cursor:pointer;
@@ -109,7 +134,7 @@ body{
     .sidebar .sidebar-selfie {width:25%; margin-top: 20px;}
   }
 
-#navFooter {
+#navSocials {
     color:#6EA4BF;
     font-size:2em;    
     left:0;
@@ -130,3 +155,10 @@ body{
 #navFooter i:hover{
     color:#C2EFEB;
 }
+
+#main {
+    transition: margin-left 0.3s;
+    background-color: #331E36;
+    color: #C2EFEB;
+}
+

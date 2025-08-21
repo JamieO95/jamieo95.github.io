@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/css/base.css' | relative_url }}">
 
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="{{ '/css/base.css' | relative_url }}">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    </head>
+
     <body>
         {% include navbar.html %}
-        <main>
+        <div id="main">        
             {{ content }}
-        </main>
+        </div>
         <script src="{{ '/js/main.js' | relative_url }}"></script>
     </body>
+    
 </html>

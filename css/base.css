@@ -3,28 +3,10 @@ html {
 }
 
 body{
-    background-color: #331E36;
+    background-color: #1E1E2E;
     margin:0;
     padding:0;    
 }
-
-#flexbox-container {
-    background-color: black;
-    display: flex;           /* establish flex container */
-    flex-direction: row;  /* make main axis vertical */
-    justify-content: space-evenly; /* center items vertically, in this case */
-    align-items: center;     /* center items horizontally, in this case */
-}
-
-.flexbox-item {
-    min-height: 10vw;
-    width:20%;
-    margin: 5px;
-    text-align: center;     /* will center text in <p>, which is not a flex item */
-}
-
-#bluebox { background: aqua; }
-#redbox { background: red; }
 
 .sidebar{
     height:100%;
@@ -158,7 +140,29 @@ body{
 
 #main {
     transition: margin-left 0.3s;
-    background-color: #331E36;
-    color: #C2EFEB;
 }
 
+#flexbox-container {
+    display: flex;           /* establish flex container */
+    flex-direction: row;  /* make main axis vertical */
+    justify-content: space-evenly; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+}
+
+.flexbox-item {
+    min-height: 10vw;
+    width:20%;
+    margin: 5px;
+    text-align: center;     /* will center text in <p>, which is not a flex item */
+}
+
+#bluebox {background-color: blue;}
+#redbox { background: red; }
+
+p {
+    color: #D9E6EC;
+}
+
+h1 {
+    color: #D9E6EC;
+}

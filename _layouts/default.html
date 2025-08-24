@@ -19,8 +19,10 @@
     </head>
 
     <body>
+        
         {% include navbar.html %}
-        <div id="main">        
+        <div id="main">
+            <h1>{{ page.title }} {% if page.subtitle%}| {{ page.subtitle }}{% endif %}</h1>        
             {{ content }}
         </div>
         <script src="{{ '/js/main.js' | relative_url }}"></script>

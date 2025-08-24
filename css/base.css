@@ -40,7 +40,7 @@ body{
 .sidebar a{
     padding: 5px 5px 5px 15px;
     text-decoration: none;
-    font-size:25px;
+    font-size:1.2em;
     color:#6EA4BF;
     display:block;
     transition:0.3s;
@@ -71,6 +71,7 @@ body{
     border-style: solid;
     border-radius: 50%;
     border-color: #6EA4BF;
+    margin-bottom: 1em;
 }
 
 .sidebar .sidebar-title {
@@ -139,30 +140,78 @@ body{
 }
 
 #main {
+    padding:2em;
     transition: margin-left 0.3s;
 }
 
-#flexbox-container {
+.flexbox-container {
     display: flex;           /* establish flex container */
+    flex-wrap:wrap;
     flex-direction: row;  /* make main axis vertical */
     justify-content: space-evenly; /* center items vertically, in this case */
     align-items: center;     /* center items horizontally, in this case */
 }
 
 .flexbox-item {
+    flex: 1 1 300px;
     min-height: 10vw;
-    width:20%;
-    margin: 5px;
+    min-width: 300px;
+    max-width: 400px;
     text-align: center;     /* will center text in <p>, which is not a flex item */
+    background-color: #41337A;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin:0.5em;
 }
 
-#bluebox {background-color: blue;}
-#redbox { background: red; }
+.flexbox-item h1{
+    margin-bottom: 0.1em;
+}
 
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;    
+    padding: 0.2em;    
+    margin:0.2em;
+}
+
+li{
+    font-size:1.2em;
+    color:#C2EFEB;
+    
+}
+
+li a{
+    color:#6EA4BF;
+    text-decoration: underline;
+    transition:0.3s;
+}
+
+li a:hover{
+    color: #D9E6EC;
+    text-decoration: underline;
+
+}
 p {
+    font-size:1em;
     color: #D9E6EC;
 }
 
 h1 {
     color: #D9E6EC;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.post-content ul {
+    list-style-type:"- ";
+    display:block;
+    margin-left: 2em;
+}
+
+.post-content li {
+    display:list-item;
+    margin-bottom: 0.5em;
 }

@@ -1,0 +1,19 @@
+---
+layout: default
+title: JamieO.XYZ
+subtitle: Blog Posts
+permalink: /blog/
+---
+<div class="flex-container">  
+  <ul>
+    
+      {% for post in site.posts %}
+      <li class = "flexbox-item">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span> - {{ post.date | date: "%B %d, %Y" }}</span>
+        {{ post.excerpt | markdownify | truncatewords: 60 }}
+      </li>    
+      {% endfor %}
+    
+  </ul>  
+</div>

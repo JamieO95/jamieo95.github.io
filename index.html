@@ -1,25 +1,22 @@
 ---
 layout: default
 title: JamieO.XYZ
+subtitle: IT, Gaming, and Life
 ---
 <!-- Inside Body/#main of default.html --> 
 
-<div id="flexbox-container"><!-- flex container -->
+<div class="flexbox-container"><!-- flex container -->
+    <p>Hello, friends. Welcome to the website. You won't find a whole lot here just now. I've owned this domain for more years than I'd like to admit, and I've never done anything proper with it. In time, you'll find the general musings of a guy obsessed with IT. I don't claim to be good, more of a jack-of-all-trades (more obviously, a master of none), but certainly an obsession and the area of the world I delve into whilst shying away from the rest.</p>
 
-    <div class="flexbox-item" id="bluebox"><!-- flex item -->
-        Div
-    </div>
-
-    <div class="flexbox-item" id="redbox"><!-- flex item -->
-        <p>DIV #2</p>
-    </div>
-
-    <div class="flexbox-item" id="redbox"><!-- flex item -->
-        <p>DIV #2</p>
-    </div>
-
-    <div class="flexbox-item" id="redbox"><!-- flex item -->
-        <p>DIV #2</p>
+    <div class="flexbox-item">
+        <h1>Latest post</h1>
+        <ul>
+            <li class = "flexbox-item">
+            {% assign latest_post = site.posts.first %}
+            <a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a>
+            {{ latest_post.excerpt | markdownify | truncatewords: 60}}
+            </li>
+        </ul>
     </div>
     
 </div>

@@ -9,7 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Temporarily disable transitions to avoid animation on page load
     sidebar.classList.add("no-transition");
     
-    const savedState = sessionStorage.getItem("sidebarState");
+    let savedState = sessionStorage.getItem("sidebarState");
+
+    if (!savedState) {
+        if (window.innerWidth > 768) {
+            savedState = "open"; // Default to open on larger screens
+        }
+        else {
+            savedState = "closed"; // Default to closed on smaller screens
+        }
+    }
 
     if (savedState === "open") {
         sidebar.classList.add("open");

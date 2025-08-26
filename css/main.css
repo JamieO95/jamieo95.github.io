@@ -5,7 +5,7 @@ html {
 body{
     background-color: #1E1E2E;
     margin:0;
-    padding:0;    
+    padding:0;
 }
 
 .sidebar{
@@ -20,6 +20,10 @@ body{
     overflow: hidden;
     padding-top:60px;
     transition:0.3s ease;
+}
+
+.sidebar.no-transition{
+    transition:none !important;
 }
 
 .sidebar.open{
@@ -85,6 +89,22 @@ body{
     text-wrap:nowrap;
 }
 
+.sidebar .sidebar-socials {
+    color:#6EA4BF;
+    font-size:1.5em;    
+    left:0;
+    bottom:0;
+    display:flex;
+    justify-content:center;
+    position:sticky;
+    overflow: hidden;
+    width:100%;
+}
+
+.sidebar .sidebar-socials a{
+    display:inline-flex;
+}
+
 .sidebar .sidebar-subtitle {
     width:80%;
     display:block;
@@ -111,33 +131,7 @@ body{
 
 }
 
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 2px;}
-    .sidebar a {font-size: 20px;}
-    .sidebar .sidebar-selfie {width:25%; margin-top: 20px;}
-  }
 
-#navSocials {
-    color:#6EA4BF;
-    font-size:2em;    
-    left:0;
-    bottom:0;
-    display:flex;
-    justify-content:center;
-    position:sticky;
-    overflow: hidden;
-    width:100%;
-}
-
-#navFooter i{
-    margin-right:10px;
-    margin-bottom:1em;
-    transition:0.3s;
-}
-
-#navFooter i:hover{
-    color:#C2EFEB;
-}
 
 #main {
     padding:2em;
@@ -214,4 +208,32 @@ h1 {
 .post-content li {
     display:list-item;
     margin-bottom: 0.5em;
+}
+
+@media screen and (max-height: 480px) {
+    .sidebar {padding-top: 2px; transition: 0.3s ease;}
+    .sidebar .sidebar-selfie {width:25%; margin-top: 1em; margin-bottom: 0.8em; transition: 0.3s;}
+    .sidebar a {font-size: 1.2em;}
+    .sidebar .sidebar-socials a {font-size: 1.2em;}    
+    .sidebar.open ~ #main {margin-left: 0px;}
+
+  }
+
+@media screen and (max-width: 768px) {
+    .sidebar.open {width:60%; transition: 0.3s;}
+    .sidebar .sidebar-selfie {width:40%; margin-top: 1em; margin-bottom: 0.8em; transition: 0.3s;}
+    .sidebar.open ~ #main {margin-left: 0px;}
+    .flexbox-item {min-width: 40%;}
+    h1 {font-size: 1.5em;}
+    
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar.open {width:100%; transition: 0.3s;}
+    .sidebar .sidebar-selfie {width:30%; margin-top: 1em; margin-bottom: 0.8em; transition: 0.3s;}
+    .sidebar.open ~ #main {margin-left: 0px;}
+    .flexbox-item {min-width: 80%;}
+    h1 {font-size: 1.5em;}
+    li {font-size: 1em;}
+
 }

@@ -21,9 +21,9 @@ Back in College, we were really only taught HTML and CSS. We were told to utiliz
 My main battles have been with CSS here. The rest all flows in a way that I understand enough, and I think my main problem with CSS is trying to utilize the same classes in different contexts and hoping it'll work identically. I am at that stage now, in that everything I'm using is technically working, but I need to sort that out for future stuff. I keep nesting parent and child and forgetting that's not how CSS works when it is in a parent it's not familiar with. I'm pretty happy with how it's turned out at this stage, save for the colour scheme (as a colourblind person).
 
 Next steps:
-- Fix for when you're on the blog, even if a child post, to highlight the Blog nav item 
+- Fix for when you're on the blog, even if a child post, to highlight the Blog nav item (Completed 23/08/2025, fixed shortly after writing this post.)
 - Blog categories, maybe a 'related' section depending on what you've clicked on 
 - Some 'back' button when you're on a blog post
-- Get a Project on the board, hello terrible old websites 
+- Get a Project on the board, hello terrible old websites (Completed 24/08/2025, only found 1 so far :()
 - Contact form? I assume that'll work on Pages 
 - Blog post about my recent experience modding an OG Xbox 

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<meta charset="utf-8">
+<title>Mr Vehicle Guy - Home Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"  />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+        <button id="show">Menu <span>+</span> <span style="display:none;">-</span></button>
+        <div class="clear"></div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="car-transport.html">Car Transport</a></li>
+            <li><a href="car-valet.html">Car Valet</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="#">Desktop Website</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="blog">
+            <h2><a href="#">Car Transport, Valeting and Sales in Carborough</a></h2>
+            <div class="blog-img"><img src="images/img1.jpg" alt="demo-image"></div>
+            <div class="blog-content"><p>Mr Vehicle Man have over twenty years experience in Car cleaning in Carborough. Our staff are Mr Vehicle Man Approved qualified Car Valeters and have had extensive experience in cleaning the most challenging of vehicles. We specialise in full Car Valets as well as Mini Valets for keeping your car in top condition. <a href="#">Read more &raquo;</a></p>
+            </div>
+        </div>
+        <div class="blog">
+            <h2><a href="http://en.wikipedia.org/wiki/Audi_Quattro">Audi Quattro</a></h2>
+            <div class="blog-img"><img src="images/img2.png" alt="demo-image" width="180" height="120"></div>
+            <div class="blog-content"><p>The Audi Quattro is a road and rally car, produced by the German automobile manufacturer Audi, now part of the Volkswagen Group. It was first shown at the 1980 Geneva Motor Show on 3 March. Production of the original version continued through 1991. <a href="http://en.wikipedia.org/wiki/Audi_Quattro">Read more &raquo;</a></p>
+            </div>
+        </div>
+        <div class="blog">
+            <h2><a href="http://en.wikipedia.org/wiki/Honda_Civic">Honda Civic</a></h2>
+            <div class="blog-img"><img src="images/img3.jpg" alt="demo-image" width="180" height="120"></div>
+            <div class="blog-content"><p>The Honda Civic is a line of subcompact and subsequently compact cars made and manufactured by Honda. The Civic, along with the Accord and Prelude, comprised Honda's vehicles sold in North America until the 1990s, when the model lineup was expanded. Having gone through several generational changes, the Civic has become larger and more upmarket, and it currently slots between the Fit and Accord. <a href="http://en.wikipedia.org/wiki/Honda_Civic">Read more &raquo;</a></p>
+            </div>
+        </div>
+<div class="copyright">
+    <p>&copy; 2010-11 <a href="#">www.MrVehicleGuy.co.uk</a></p>
+</div>
+
+<script type="text/javascript">
+	$('.nav').hide();
+	$('#show').click(function (){
+		$(".nav").toggle();
+		$("span").toggle();
+	});
+</script>
+</div>
+</body>
+</html>

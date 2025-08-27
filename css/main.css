@@ -140,10 +140,15 @@ body{
 
 .flexbox-container {
     display: flex;           /* establish flex container */
-    flex-wrap:wrap;
+    flex-wrap:wrap;       /* flex items to wrap to next line */
     flex-direction: row;  /* make main axis vertical */
     justify-content: space-evenly; /* center items vertically, in this case */
     align-items: center;     /* center items horizontally, in this case */
+}
+
+.flexbox-container.projectcontainer{
+    justify-content: flex-start; /* align items to the left */
+    list-style: none;
 }
 
 .flexbox-item {
@@ -156,6 +161,11 @@ body{
     border-radius: 0.5em;
     padding: 0.5em;
     margin:0.5em;
+}
+
+.flexbox-item.projectitem{
+    min-width: 200px;
+    max-width: 200px;
 }
 
 .flexbox-item h1{
@@ -197,6 +207,14 @@ h1 {
     color: #D9E6EC;
     font-weight: bold;
     font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    color: #D9E6EC;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
 }
 
 .post-content ul {
@@ -224,7 +242,8 @@ h1 {
     .sidebar .sidebar-selfie {width:40%; margin-top: 1em; margin-bottom: 0.8em; transition: 0.3s;}
     .sidebar.open ~ #main {margin-left: 0px;}
     .flexbox-item {min-width: 40%;}
-    h1 {font-size: 1.5em;}
+    h1 {font-size: 1.5em; text-align: center;}
+    h2 {font-size: 1.2em; margin-bottom: 0em;}
     
 }
 
@@ -233,7 +252,11 @@ h1 {
     .sidebar .sidebar-selfie {width:30%; margin-top: 1em; margin-bottom: 0.8em; transition: 0.3s;}
     .sidebar.open ~ #main {margin-left: 0px;}
     .flexbox-item {min-width: 80%;}
-    h1 {font-size: 1.5em;}
+    .flexbox-item ul, .flexbox-item li{margin:0px;}
+    h1 {font-size: 1.5em;text-align: center;}
+    h2 {font-size: 1.2em; margin: 0px;}
     li {font-size: 1em;}
+    .flexbox-container.projectcontainer{justify-content: space-evenly;}
+    .flexbox-item.projectitem{min-width: 80%;max-width: 80%;}
 
 }

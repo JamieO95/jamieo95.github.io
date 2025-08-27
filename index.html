@@ -9,7 +9,7 @@ subtitle: IT, Gaming, and Life
     <p>Hello, friends. Welcome to the website. You won't find a whole lot here just now. I've owned this domain for more years than I'd like to admit, and I've never done anything proper with it. In time, you'll find the general musings of a guy obsessed with IT. I don't claim to be good, more of a jack-of-all-trades (more obviously, a master of none), but certainly an obsession and the area of the world I delve into whilst shying away from the rest.</p>
 
     <div class="flexbox-item">
-        <h1>Latest post</h1>
+        <h2>Latest post</h2>
         <ul>
             <li class = "flexbox-item">
             {% assign latest_post = site.posts.first %}
@@ -19,5 +19,16 @@ subtitle: IT, Gaming, and Life
             </li>
         </ul>
     </div>
-    
+
+    <div class="flexbox-item">
+        <h2>Latest project</h2>
+        <ul>
+            <li class = "flexbox-item">
+                {% assign oldwebsitearchive = site.pages | where: "subtitle", "Old website archive" | first %}
+                <a href="{{ oldwebsitearchive.url | relative_url }}">{{ oldwebsitearchive.subtitle }}</a>
+                <span> - {{ oldwebsitearchive.date | date: "%B %d, %Y" }}</span>
+                {{ oldwebsitearchive.content | markdownify | truncatewords: 60}}
+            </li>
+        </ul>
+    </div>    
 </div>

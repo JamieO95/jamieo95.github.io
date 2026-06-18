@@ -131,8 +131,6 @@ body{
 
 }
 
-
-
 #main {
     padding:2em;
     transition: margin-left 0.3s;
@@ -228,12 +226,60 @@ h2 {
     margin-bottom: 0.5em;
 }
 
+.post-content figure {
+    text-align: center;
+}
+
+.post-content figure img {
+    max-width: 50%;
+    height: auto;
+}
+
+.post-content figure figcaption {
+    color: #D9E6EC;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.post-content code{
+    background-color: #2E2E3E;
+    color: #C2EFEB;
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
+}
+
+.post-content img {
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+}
+
+/* img zoom in */
+.img-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.img-overlay img {
+    max-width: 95%;
+    max-height: 95%;
+    cursor: zoom-out;
+}
+
 @media screen and (max-height: 480px) {
     .sidebar {padding-top: 2px; transition: 0.3s ease;}
     .sidebar .sidebar-selfie {width:25%; margin-top: 1em; margin-bottom: 0.8em; transition: 0.3s;}
     .sidebar a {font-size: 1.2em;}
     .sidebar .sidebar-socials a {font-size: 1.2em;}    
     .sidebar.open ~ #main {margin-left: 0px;}
+    .post-content figure img {max-width: 80%;height: auto;}
 
   }
 
@@ -244,6 +290,7 @@ h2 {
     .flexbox-item {min-width: 40%;}
     h1 {font-size: 1.5em; text-align: center;}
     h2 {font-size: 1.2em; margin-bottom: 0em;}
+    .post-content figure img {max-width: 80%;height: auto;}
     
 }
 
@@ -258,5 +305,6 @@ h2 {
     li {font-size: 1em;}
     .flexbox-container.projectcontainer{justify-content: space-evenly;}
     .flexbox-item.projectitem{min-width: 80%;max-width: 80%;}
+    .post-content figure img {max-width: 80%;height: auto;}
 
 }

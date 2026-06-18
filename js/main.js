@@ -60,3 +60,33 @@ document.addEventListener("DOMContentLoaded", () => {
                 sessionStorage.removeItem("linkClicked");
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".post-content img");
+
+    images.forEach(img => {
+        img.addEventListener("click", function () {
+            // create overlay
+            const overlay = document.createElement("div");
+            overlay.className = "img-overlay";
+
+            const bigImg = document.createElement("img");
+            bigImg.src = this.src;
+            bigImg.alt = this.alt;
+
+            overlay.appendChild(bigImg);
+            document.body.appendChild(overlay);
+
+            // close on click
+            overlay.addEventListener("click", function () {
+                overlay.remove();
+            });
+        });
+    });
+});
+
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        document.querySelector(".img-overlay")?.remove();
+    }
+});

@@ -1,9 +1,8 @@
 ---
 layout: default
+title: Thank you!
 permalink: /thanks/
 ---
-
-# Thank you!
 
 Your message has been sent successfully. I'll get back to you as soon as possible.
 

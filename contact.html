@@ -4,16 +4,30 @@ title: JamieO.XYZ
 subtitle: Contact
 permalink: /contact/
 ---
-    <h1>Test1</h1>
+
+<p>Send me a message using the form below. You're welcome to reach out to me for anything, whether it's related to a post I've made or something you think I may be able to help you with. I'll look forward to hearing from you.</p>
 
     <div id="container"><!-- flex container -->
-<p>Page URL: {{ page.url }}</p>
-        <div class="box" id="bluebox"><!-- flex item -->
-            Div
+        <form action="https://api.staticforms.dev/submit" method="POST">
+        <input type="hidden" name="apiKey" value="sf_219801fd2a954f6ac6c89c00" />
+        <input type="hidden" name="subject" value="jamieo.xyz submission" />
+        <input type="hidden" name="redirectTo" value="https://jamieo.xyz/thanks/" />
+        
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Your Name" required />
         </div>
 
-        <div class="box" id="redbox"><!-- flex item -->
-            <p>DIV #2</p>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email Address" required />
         </div>
 
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="Message" required></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+        </form>
     </div>

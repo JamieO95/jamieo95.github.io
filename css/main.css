@@ -196,7 +196,7 @@ li a:hover{
     text-decoration: underline;
 
 }
-p {
+p, label {
     font-size:1em;
     color: #D9E6EC;
 }
@@ -213,6 +213,56 @@ h2 {
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 0.1em;
+}
+
+a{
+    text-decoration: none;
+    color:#6EA4BF;
+    transition:0.3s;
+}
+
+a:hover {
+    color:#C2EFEB;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    width: 100px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 0.5rem;
+    font: inherit;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    background-color: #2E2E3E;
+    color: #C2EFEB;
+}
+
+.form-group textarea {
+    align-self: flex-start;
+}
+
+form button {
+    padding: 0.5rem 2.5rem;
+    font: inherit;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #2E2E3E;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2e2e3eb2;
 }
 
 .post-content ul {

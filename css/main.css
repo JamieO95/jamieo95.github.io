@@ -291,11 +291,24 @@ form button:hover {
     text-align: center;
 }
 
+.post-content pre, code{
+    text-indent: 0;
+}
+
 .post-content code{
     background-color: #2E2E3E;
     color: #C2EFEB;
-    padding: 0.2em 0.4em;
     border-radius: 0.3em;
+}
+
+.post-content pre {
+    background-color: #2E2E3E;
+    color: #C2EFEB;
+    padding: 1em;
+    line-height: 1.5;
+    border-radius: 0.3em;
+    overflow-x: auto;
+    width:fit-content;
 }
 
 .post-content img {

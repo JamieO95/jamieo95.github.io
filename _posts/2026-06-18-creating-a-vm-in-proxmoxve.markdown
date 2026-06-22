@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Creating a VM in Proxmox VE"
+description: "This is a tutorial on how to both create a Virtual Machine (VM) using Proxmox Virtual Environment, and installing Ubuntu Server 24.04 on it"
+keywords: "proxmox, virtual environment, pve, creating a vm, virtual machine, ubuntu server, installing ubuntu, how to, tutorial, tech, it"
 subtitle: "A prequel to my next post"
 date:   2026-06-18 10:00:00 +0100
-category: website
+category: homelab
 author: "Jamie"
 permalink: "/blog/creating-a-vm-in-proxmox-ve"
 ---
@@ -176,7 +178,7 @@ In case you want/need to set a static IP address, use your keyboard arrow keys t
 
 Set that IPv4 Method to Manual and enter your network details. If you're just connecting this to your home's LAN, you can work out your Subnet, and Address you can assign, Gateway and ISPs Name Servers by running a Command Prompt window, and typing:
 
-<code>ipconfig /all</code>
+<pre><code>ipconfig /all</code></pre>
 
 **Subnet**: The full network/subnet you're using. E.g. **192.168.1.0/24**
 

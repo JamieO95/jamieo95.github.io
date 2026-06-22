@@ -21,14 +21,13 @@
 title: JamieO.XYZ
 author: Jamie Oliver
 email: jamie.oliver1995@gmail.com
-description: "Sharing projects, tutorials, and blog posts about all things IT. You'll (eventually) find content about my web development thoughts, projects I'm working on, and tutorials on how I got there.""
+description: "Sharing projects, tutorials, and blog posts about all things IT. You'll (eventually) find content about my web development thoughts, projects I'm working on, and tutorials on how I got there."
 keywords: "blog, projects, tutorials, web development, programming, coding, IT, Jamie Oliver, JamieO, virtualization, homelab, tech, software, hardware, windows"
 language: en
 locale: en_UK
 timezone: Europe/London
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jamieotv
 github_username:  jamieo95
 
 # Build settings

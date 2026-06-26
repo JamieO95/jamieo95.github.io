@@ -10,7 +10,7 @@ author: "Jamie"
 permalink: "/blog/hosting-a-local-ai-platform"
 ---
 
-Hello, friends. I did something a little different today and thought it'd be fun to do a write-up. We all know about ChatGPT, Gemini, Copilot - but how about Ollama? (https://ollama.com) Ollama is an open-source framework that gets gives you the ability to run large language models (LLMs) from your own devices. We can technically interface with it directly in a terminal, but I thought I'd use the opportunity to also test out something fresh and unexpected, PewDiePie's Odysseus. This will allow us to interface with Ollama's LLMs in a nice chat window, like you're probably used to. Let's get to it.
+Hello, friends. I did something a little different today and thought it'd be fun to do a write-up. We all know about ChatGPT, Gemini, Copilot - but how about <a href="https://ollama.com" target="_blank">Ollama?</a> Ollama is an open-source framework that gets gives you the ability to run large language models (LLMs) from your own devices. We can technically interface with it directly in a terminal, but I thought I'd use the opportunity to also test out something fresh and unexpected, PewDiePie's Odysseus. This will allow us to interface with Ollama's LLMs in a nice chat window, like you're probably used to. Let's get to it.
 
 Requirements:
 - A device to install on to, I've chosen to do this on a Ubuntu Virtual Machine (VM)

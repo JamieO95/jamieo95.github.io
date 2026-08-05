@@ -184,18 +184,6 @@ li{
     color:#C2EFEB;
     
 }
-
-li a{
-    color:#6EA4BF;
-    text-decoration: underline;
-    transition:0.3s;
-}
-
-li a:hover{
-    color: #D9E6EC;
-    text-decoration: underline;
-
-}
 p, label {
     font-size:1em;
     color: #D9E6EC;
